@@ -1,0 +1,1 @@
+class GPSNavigator(route: String = "some address here")
