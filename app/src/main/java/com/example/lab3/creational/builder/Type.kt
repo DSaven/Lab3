@@ -1,3 +1,3 @@
 enum class Type {
-    CITY, SPORT, SUV
+    MILITARY, SPORT
 }

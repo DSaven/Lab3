@@ -1,15 +1,15 @@
 class TripComputer {
-    var car: Car? = null
+    var plane: Plane? = null
 
     fun showFuelLevel() {
-        println("Fuel level: ${car?.fuel}")
+        println("Fuel level: ${plane?.fuel}")
     }
 
     fun showStatus() {
-        if (car?.engine != null && car?.engine!!.isStarted) {
-            println("Car is started")
+        if (plane?.engine != null && plane?.engine!!.isStarted) {
+            println("Plane is started")
         } else {
-            println("Car isn't started")
+            println("Plane isn't started")
         }
     }
 }

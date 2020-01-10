@@ -9,10 +9,6 @@ class Server {
     fun logIn(email: String, password: String): Boolean {
         if (middleware!!.check(email, password)) {
             println("Authorization have been successful!")
-
-            // Здесь должен быть какой-то полезный код, работающий для
-            // авторизированных пользователей.
-
             return true
         }
         return false

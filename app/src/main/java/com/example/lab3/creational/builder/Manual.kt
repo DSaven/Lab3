@@ -3,9 +3,9 @@ class Manual(var type: Type?, var seats: Int?, var engine: Engine?, var transmis
 
     fun print(): String {
         var info = ""
-        info += "Type of car: $type\n"
+        info += "Type of plane: $type\n"
         info += "Count of seats: $seats\n"
-        info += "Engine: speed - " + engine?.volume + "; mileage - " + engine?.distance + "\n"
+        info += "Engine: volume - " + engine?.volume + "; mileage - " + engine?.distance + "\n"
         info += "Transmission: $transmission\n"
         info += if (tripComputer != null) {
             "Trip Computer: Functional" + "\n"

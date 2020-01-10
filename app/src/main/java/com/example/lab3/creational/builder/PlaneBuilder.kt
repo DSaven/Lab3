@@ -1,10 +1,10 @@
-class CarManualBuilder : Builder {
+class PlaneBuilder : Builder {
     private var type: Type = null
     private var seatsQuantity: Int = 0
     private var engine: Engine = null
     private var transmission: Transmission = null
-    private var tripComputer: TripComputer = null
-    private var GPS: GPSNavigator = null
+    private var tripComputer: TripComputer? = null
+    private var GPS: GPSNavigator? = null
 
     override fun setType(type: Type) {
         this.type = type
@@ -22,15 +22,15 @@ class CarManualBuilder : Builder {
         this.transmission = transmission
     }
 
-    override fun setTripComputer(tripComputer: TripComputer) {
+    override fun setTripComputer?(tripComputer: TripComputer) {
         this.tripComputer = tripComputer
     }
 
-    override fun setGPSNavigator(GPS: GPSNavigator) {
-        this.GPS = GPS
+    override fun setGPSNavigator(gpsNavigator: GPSNavigator) {
+        this.GPS = gpsNavigator
     }
 
-    fun getResult(): Manual {
-        return Manual(type, seatsQuantity, engine, transmission, tripComputer, GPS)
+    fun getResult(): Car {
+        return Car(type, seatsQuantity, engine, transmission, tripComputer, GPS)
     }
 }

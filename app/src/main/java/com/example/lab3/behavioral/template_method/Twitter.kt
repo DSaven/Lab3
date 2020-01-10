@@ -10,7 +10,6 @@ class Twitter(userName: String, password: String) : Network(userName, password) 
         for (i in password.indices) {
             print("*")
         }
-        simulateNetworkLatency()
         println("LogIn success on Twitter")
         return true
     }
@@ -24,18 +23,4 @@ class Twitter(userName: String, password: String) : Network(userName, password) 
         println("User: '$userName' was logged out from Twitter")
     }
 
-    private fun simulateNetworkLatency() {
-        try {
-            var i = 0
-            println()
-            while (i < 10) {
-                print(".")
-                Thread.sleep(500)
-                i++
-            }
-        } catch (ex: InterruptedException) {
-            ex.printStackTrace()
-        }
-
-    }
 }
