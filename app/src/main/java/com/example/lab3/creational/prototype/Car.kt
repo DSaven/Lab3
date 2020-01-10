@@ -1,8 +1,8 @@
 class Car() : Hull() {
-    var speed: Int = 0
+    var radius: Int = 0
 
     constructor(target: Car) : this() {
-        speed = target.speed
+        radius = target.radius
     }
 
     override fun clone(): Shape {

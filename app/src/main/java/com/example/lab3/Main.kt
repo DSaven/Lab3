@@ -4,5 +4,6 @@ import java.io.InputStreamReader
 
 fun main() {
 
+    Singleton sgl = Singleton.getInstance()
 }
 

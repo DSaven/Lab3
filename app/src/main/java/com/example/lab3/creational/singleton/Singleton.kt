@@ -14,8 +14,7 @@ class Singleton(value: String) {
 
         fun getInstance(value: String): Singleton {
             if (instance == null) {
-                instance =
-                    Singleton(value)
+                instance = Singleton(value)
             }
             return instance!!
         }
